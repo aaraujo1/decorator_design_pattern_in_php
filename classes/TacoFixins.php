@@ -1,6 +1,6 @@
 <?php
 /*--- 3. The Decorator ---*/
-//the abstract class responsible for defining decorator structure
+//the abstract class responsible for defining the decorator structure
 abstract class TacoFixins implements Taco{
 	/*---attribute of component type---*/
 	protected $taco;

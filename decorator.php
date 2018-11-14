@@ -19,7 +19,7 @@
 	//array of taco objects
 	$tacoArray = array();
 	
-	echo '<h2>The Base Class - Concrete Component</h2>';
+	echo '<h2>The Base Class</h2><h3>Concrete Component</h3>';
 	
 	//define base taco objects
 	$beefTaco = new PlainTaco('Hard Shell','Beef 🥩');
@@ -44,7 +44,7 @@
 	echo '</ul>';
 	
 	
-	echo '<h2>Adding Decorator - Concrete Decorator With a New Variable</h2>';
+	echo '<hr><h2>Adding Decorator</h2><h3>Concrete Decorator With a New Variable</h3>';
 	
 	//new object with decoration
 	$tacoGuac = new Guacamole($beefTaco);
@@ -55,7 +55,7 @@
 	echo '$' . number_format($tacoGuac->getCost());
 	
 	
-	echo "<h2>The Original Object Hasn't Been Modified</h2>";
+	echo "<h2>Cool!😎</h2><h3>The Original Object Hasn't Been Modified</h3>";
 	
 	//display original object
 	echo $beefTaco->getDescription();
@@ -64,7 +64,7 @@
 	
 	
 	
-	echo "<h2>Adding Decorator - Concrete Decorators Without a New Variable</h2>";
+	echo "<hr><h2>Adding Decorator</h2><h3>Concrete Decorators Without a New Variable</h3>";
 	//same object with one decoration
 	echo (new Cheese($chickenTaco))->getDescription() . ' costs $' . 
 		number_format((new Cheese($chickenTaco))->getCost());
@@ -81,7 +81,7 @@
 		  ($tongueTaco)))->getCost());
 	
 	
-	echo "<h2>Again, The Original Object Hasn't Been Modified</h2>";
+	echo "<h2><sup>🎊</sup>🎉Yay!🎉<sup>🎊</sup></h2><h3>Again, The Original Object Hasn't Been Modified</h3>";
 	
 	//display original object
 	echo $chickenTaco->getDescription() . ' costs $' . number_format($chickenTaco->getCost());
