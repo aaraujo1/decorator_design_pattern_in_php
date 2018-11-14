@@ -22,7 +22,7 @@ class PlainTaco implements Taco{
 	}
 	
 	public function getDescription(){
-		return $this->shell . ' ' . $this->meat . ' taco';
+		return $this->shell . ' ' . $this->meat . ' taco 🌮';
 	}
 	
 }
